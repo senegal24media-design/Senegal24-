@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: senegal24media-design/Senegal24-
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "blog"
+    label: "Articles"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Image principale", name: "image", widget: "image"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
