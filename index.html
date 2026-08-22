@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sénégal 24 - L'actualité en direct</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #1a1a1a;
+      --primary-color: #e50914;
+      --header-bg: #0f172a;
+      --header-text: #ffffff;
+      --card-bg: #f8fafc;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--header-bg);
+      color: var(--header-text);
+      padding: 0.8rem 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .logo-img {
+      height: 45px;
+      width: 45px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('logo.png') center/cover;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      border-bottom: 3px solid var(--primary-color);
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    .social-section {
+      background-color: var(--card-bg);
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .social-btn-youtube {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #ff0000;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .social-btn-youtube:hover {
+      background-color: #cc0000;
+    }
+
+    footer {
+      background-color: var(--header-bg);
+      color: var(--header-text);
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo-container">
+      <img src="logo.png" alt="Sénégal 24" class="logo-img">
+      <span style="font-weight: bold; font-size: 1.2rem;">Sénégal 24</span>
+    </a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bienvenue sur Sénégal 24</h1>
+    <p>L'information fiable, en temps réel et au cœur de l'actualité.</p>
+  </section>
+
+  <main>
+    <h2 class="section-title">À la une</h2>
+    
+    <div style="background: var(--card-bg); padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+      <h3>Aliou Kébé : Un professionnalisme et une rigueur exemplaires</h3>
+      <p>Découvrez le portrait et le parcours inspirant de ce visage fort du journalisme sénégalais.</p>
+      <a href="aliou-kebe.html" style="color: var(--primary-color); font-weight: bold; text-decoration: none;">Lire l'article complet →</a>
+    </div>
+
+    <!-- Section Chaîne YouTube -->
+    <div class="social-section">
+      <h3>Suivez-nous en vidéo</h3>
+      <p>Retrouvez tous nos reportages et décryptages sur notre chaîne officielle.</p>
+      <a href="https://www.youtube.com/@S%C3%A9n%C3%A9gal24tv-n1h5b" target="_blank" rel="noopener noreferrer" class="social-btn-youtube">
+        ▶ Rejoindre Sénégal 24tv sur YouTube
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sénégal 24 - Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
