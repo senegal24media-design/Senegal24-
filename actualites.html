@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actualités - Sénégal 24</title>
+  
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <meta name="description" content="Toutes les actualités en direct du Sénégal et du monde : politique, économie, sport, culture.">
+  <meta name="keywords" content="Sénégal, actualités, infos, Dakar, politique, sport, Aliou Kébé">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Actualités - Sénégal 24">
+  <meta property="og:description" content="Suivez l'actualité sénégalaise en temps réel.">
+  <meta property="og:image" content="logo.png">
+
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #1a1a1a;
+      --primary-color: #e50914;
+      --card-bg: #f4f4f4;
+      --header-bg: #0f172a;
+      --header-text: #ffffff;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #0f172a;
+      --text-color: #f8fafc;
+      --card-bg: #1e293b;
+      --header-bg: #020617;
+      --header-text: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: var(--header-bg);
+      color: var(--header-text);
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    nav a {
+      color: var(--header-text);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    nav a.active {
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--primary-color);
+    }
+
+    .theme-toggle {
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: var(--header-text);
+      padding: 0 5px;
+    }
+
+    main {
+      padding: 1.5rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      font-size: 1.8rem;
+    }
+
+    .news-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .news-card {
+      background-color: var(--card-bg);
+      padding: 1.2rem;
+      border-radius: 8px;
+    }
+
+    .news-card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    .news-card .date {
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: var(--header-bg);
+      color: var(--header-text);
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .social-links {
+      margin-top: 10px;
+    }
+
+    .social-links a {
+      color: var(--header-text);
+      margin: 0 8px;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">SÉNÉGAL 24</a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="actualites.html" class="active">Actualités</a>
+      <a href="contact.html">Contact</a>
+      <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Dernières Actualités</h1>
+    
+    <div class="news-grid">
+      <!-- Article Aliou Kébé -->
+      <article class="news-card">
+        <h2>Aliou Kébé : Un professionnalisme et une rigueur exemplaires</h2>
+        <p class="date">Publié le 22 août 2026</p>
+        <p>Zoom sur le parcours et l'engagement d'Aliou Kébé, un journaliste dont l'éthique et le travail remarquable honorent la profession.</p>
+        <a href="aliou-kebe.html" class="read-more">Lire l'article complet →</a>
+      </article>
+
+      <!-- Article Victoire des Lions -->
+      <article class="news-card">
+        <h2>Victoire éclatante des Lions du Sénégal</h2>
+        <p class="date">Publié le 21 août 2026</p>
+        <p>Les Lions du Sénégal ont décroché une brillante victoire lors de leur dernier match. Retrouvez tous les détails et les faits marquants de cette rencontre exceptionnelle.</p>
+        <a href="2026-08-21-victoire-lions.html" class="read-more">Lire l'article complet →</a>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sénégal 24 - Tous droits réservés.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a> | 
+      <a href="#">X (Twitter)</a> | 
+      <a href="#">YouTube</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.body.getAttribute('data-theme');
+      const btn = document.getElementById('themeBtn');
+      
+      if (currentTheme === 'dark') {
+        document.body.removeAttribute('data-theme');
+        btn.textContent = '🌙';
+      } else {
+        document.body.setAttribute('data-theme', 'dark');
+        btn.textContent = '☀️';
+      }
+    }
+  </script>
+
+</body>
+</html>
