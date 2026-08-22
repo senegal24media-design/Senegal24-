@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sénégal 24 - L'actualité en direct</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #1a1a1a;
+      --primary-color: #e50914;
+      --header-bg: #0f172a;
+      --header-text: #ffffff;
+      --card-bg: #f8fafc;
+    }
+
+    body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+
+    header { 
+      background-color: var(--header-bg); 
+      color: var(--header-text); 
+      padding: 0.8rem; 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      flex-wrap: wrap; 
+      gap: 10px;
+    }
+
+    .logo-container { display: flex; align-items: center; gap: 8px; text-decoration: none; color: white; }
+    .logo-img { height: 40px; width: 40px; object-fit: cover; border-radius: 50%; }
+    
+    nav { display: flex; gap: 10px; }
+    nav a { color: white; text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+
+    .hero { background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('logo.png') center/cover; color: white; text-align: center; padding: 2rem 1rem; }
+    .hero h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+
+    .rubriques-container { background-color: #f1f5f9; padding: 12px; overflow-x: auto; white-space: nowrap; display: flex; gap: 10px; border-bottom: 1px solid #e2e8f0; }
+    .rubrique-tag { background-color: #ffffff; color: #0f172a; padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-decoration: none; border: 1px solid #cbd5e1; }
+
+    main { padding: 1.5rem 1rem; max-width: 1000px; margin: 0 auto; }
+    .section-title { border-bottom: 3px solid var(--primary-color); display: inline-block; padding-bottom: 5px; margin-bottom: 15px; }
+
+    .social-section { background-color: var(--card-bg); padding: 15px; border-radius: 8px; text-align: center; margin-top: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .social-btn-youtube { display: inline-flex; align-items: center; gap: 8px; background-color: #ff0000; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+
+    /* Footer Professionnel */
+    footer {
+      background-color: var(--header-bg);
+      color: #94a3b8;
+      padding: 2.5rem 1rem 1.5rem 1rem;
+      margin-top: 3rem;
+      font-size: 0.88rem;
+    }
+
+    .footer-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .footer-section h4 {
+      color: #ffffff;
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .footer-section p {
+      margin: 5px 0;
+      line-height: 1.5;
+    }
+
+    .footer-section a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 1.5rem;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo-container">
+      <img src="logo.png" alt="Sénégal 24" class="logo-img">
+      <span style="font-weight: bold; font-size: 1.1rem;">Sénégal 24</span>
+    </a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="actualites.html">Actu</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bienvenue sur Sénégal 24</h1>
+    <p>L'information fiable, en temps réel.</p>
+  </section>
+
+  <nav class="rubriques-container">
+    <a href="actualites.html" class="rubrique-tag">📌 Politique</a>
+    <a href="actualites.html" class="rubrique-tag">📈 Économie</a>
+    <a href="actualites.html" class="rubrique-tag">🏥 Santé</a>
+    <a href="actualites.html" class="rubrique-tag">🎭 Culture</a>
+    <a href="actualites.html" class="rubrique-tag">🌱 Environnement</a>
+    <a href="actualites.html" class="rubrique-tag">🌍 International</a>
+    <a href="actualites.html" class="rubrique-tag">⚖️ Faits divers</a>
+  </nav>
+
+  <main>
+    <h2 class="section-title">À la une</h2>
+    <div style="background: var(--card-bg); padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+      <h3>Aliou Kébé : Un professionnalisme et une rigueur exemplaires</h3>
+      <p>Découvrez le portrait et le parcours inspirant de ce visage fort du journalisme sénégalais.</p>
+      <a href="aliou-kebe.html" style="color: var(--primary-color); font-weight: bold; text-decoration: none;">Lire l'article complet →</a>
+    </div>
+
+    <div class="social-section">
+      <h3>Suivez-nous en vidéo</h3>
+      <a href="https://www.youtube.com/@S%C3%A9n%C3%A9gal24tv-n1h5b" target="_blank" class="social-btn-youtube">
+        ▶ Sénégal 24tv sur YouTube
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Sénégal 24</h4>
+        <p>Organe de presse en ligne. L'actualité sénégalaise et internationale en temps réel.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Direction</h4>
+        <p><strong>Gérant & Directeur de publication :</strong><br>ALIOU KEBE</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact & Adresse</h4>
+        <p><strong>Adresse :</strong> Patte d'Oie, Dakar (Villa N° 71 A)</p>
+        <p><strong>Téléphone :</strong> <a href="tel:778980681">77 898 06 81</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sénégal 24 - Tous droits réservés.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
